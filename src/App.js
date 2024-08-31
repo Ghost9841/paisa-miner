@@ -1,24 +1,40 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Rewards from './pages/Rewards';
 import './App.css';
+import Earn from './pages/Earn';
+import Events from './pages/Events';
+import Footer from './components/Footer';
+import Game from './pages/Game';
+import Market from './pages/Market';
+import Signin from './pages/Signin';
+import Giveaways from './pages/Giveaways';
+import Promocodes from './pages/Promocodes';
+import Signup from './pages/Signup';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/earn" element={<Earn/>} />
+          <Route path="/events" element={<Events/>} />
+          <Route path="/rewards" element={<Rewards />} />
+          <Route path="/games" element={<Game/>} />
+          <Route path="/market" element={<Market/>} />
+          <Route path="/promocodes" element={<Promocodes />} />
+          <Route path="/giveaways" element={<Giveaways />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </div>
+      <Footer/>
+    </Router>
   );
 }
 
