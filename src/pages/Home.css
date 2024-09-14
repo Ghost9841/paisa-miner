@@ -1,0 +1,110 @@
+.home-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+} 
+
+.hero-section {
+  text-align: center;
+  background-color: #0042B4;
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ff8c00;
+  color: #ffffff;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00008B; /* This should be the correct hover color */
+}
+
+.paisaminer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 400px; 
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.text-container {
+  max-width: 600px;
+}
+
+.text-container h1 {
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  line-height: 1.6;
+}
+
+.text-side {
+  max-width: 50%;
+}
+
+.text-side h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.text-side p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.image-side img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.paisaminer, .mining-intro {
+  padding: 50px 0;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
