@@ -1,0 +1,16 @@
+.earn-page {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+.earning-status{
+    width: 704px;
+    height: 351px;
+    jusity-content : space-around;
+    padding : 10px;
+    border: 10;
+    border-color : red;
+}
